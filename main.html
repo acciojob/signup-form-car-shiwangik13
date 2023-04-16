@@ -7,48 +7,49 @@
     <title>Signup form car</title>
 </head>
 <body>
-    <form>
+    <form method="post">
        <div>
         <label for="name">Name*</label><br>
         <input type="text" id="name" placeholder="enter a name" required>
        </div>
        <div>
-        <label for="email">Email*</label>
+        <label for="email">Email*</label><br>
         <input type="text" id="email" placeholder="enter an email" required>
        </div>
        <div>
-        <label for="gender">Gender*</label>
-       Male: <input type="radio" id="gender" required><br>
-       Female: <input type="radio" id="gender" required><br>
-       others: <input type="radio" id="gender" required><br>
+        <label for="gender">Gender*</label><br>
+        <input type="radio" id="gender_m" name="gender" required>
+        <label for="gender_m">Male</label><br>
+        <input type="radio" id="gender_f" name="gender" required>
+		 <label for="gender_f">female</label><br>  
        </div>
        <div>
-        <label for="cars">--Please choose an option--</label>
-         <select id="cars" name="cars">
+        <label for="cars">--Please choose an option--</label><br>
+         <select id="cars" name="cars" required>
          <option value="BMW">BMW</option>
          <option value="audi">Audi</option>
          <option value="Marcedes" selected>Marcedes</option>
          </select>
        </div>
        <div>
-        <label for="age">Age*</label>
+        <label for="age">Age*</label><br>
         <input type="number" id="age" placeholder="enter an age" required>
        </div>
        <div>
-        <label for="DOB">DOB*</label>
+        <label for="DOB">DOB*</label><br>
         <input type="date" id="DOB"required>
        </div>
        <div>
         <label for="phoneNum">Phone Number</label><br>
-        <input type="tel" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
+        <input type="tel" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
        </div>
        <div>
-        <label for="password">Password*</label>
+        <label for="password">Password*</label><br>
         <input type="password" id="password" placeholder="enter password" required>
        </div>
        <div>
-        <label for="checkbox">checkbox*</label>
-       <input type="checkbox" id="checkbox" required> I agree to the TOS.
+        <label for="checkbox">Checkbox*</label><br>
+       <input type="checkbox" id="TOS" required> I agree to the TOS.
        </div>
        <div>
         <button type="submit">Submit</button>
